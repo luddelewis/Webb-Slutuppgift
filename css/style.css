@@ -1,1 +1,13 @@
 /*css*/
+body{
+	border:3px solid pink;
+}
+header{
+	color:white;
+	height: 20em;
+	border:1px solid black;
+}
+
+.logoimg{
+	height:5em;
+}
