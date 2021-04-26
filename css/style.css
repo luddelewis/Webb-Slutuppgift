@@ -1,13 +1,33 @@
 /*css*/
-body{
-	border:3px solid pink;
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+html, body{
+	height: 100%;
+	margin:0;
 }
 header{
+	max-height: 11%;
 	color:white;
-	height: 20em;
-	border:1px solid black;
+	border:2px solid pink;
 }
-
+main{
+	background-image: url("../assets/indexbg.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	min-height: 80%;
+	border:2px solid green;
+}
+footer{
+	height:9%;
+	border:2px solid purple;
+}
 .logoimg{
-	height:5em;
+	max-height: 6em;
+}
+.active{
+	font-weight: bold;
+}
+.navbar{
+	padding:0;
 }
