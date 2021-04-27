@@ -16,7 +16,15 @@ main{
 	background-repeat: no-repeat;
 	background-size:cover;
 	min-height: 80%;
+	padding:3%;
+}
+article{
+	height:auto;
+	width:100%;
 	border:2px solid green;
+	display: flex;
+	flex-direction: row;
+	padding:3em;
 }
 footer{
 	height:9%;
@@ -31,3 +39,7 @@ footer{
 .navbar{
 	padding:0;
 }
+.textcontainer{
+	width:50%;
+}
+
