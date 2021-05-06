@@ -2,6 +2,7 @@
 /*Sets the font to Montserrat*/
 *{
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
 /*Makes the html document use 100% of avalible space so that the elements can use % of it*/
 html, body{
@@ -24,15 +25,15 @@ article{
 	display: flex;
 	flex-direction: row;
 	padding:3em;
-	/*Top and bottom margin inorder to make space inbetween the articles*/
-	margin-bottom:5em;
+	/*Bottom margin inorder to make space inbetween the articles*/
+	margin-bottom:1%;
 }
 /*Size of logo*/
 .logoimg{
 	height: 6em;
 }
 /*Makes the current page's link bold*/
-.active{
+.active .bold{
 	font-weight: bold;
 }
 /*Removes padding from the bootstrap class navbar*/
@@ -42,11 +43,18 @@ article{
 /*Makes the text only take up half the space in the article*/
 .text_container{
 	width:50%;
-	padding-right:5em;
+	padding-right:3%;
 }
 /*Same for the image*/
 .image_container{
 	width:50%;
+}
+/*Curriuculum page needs different css because it only has text*/
+.curriculum_main{
+	padding:5% 20%;
+}
+.curriculum_article{
+	
 }
 #index_bg{
 background-image: url(../assets/index_bg.png);
