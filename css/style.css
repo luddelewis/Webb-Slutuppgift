@@ -1,44 +1,57 @@
 /*css*/
+/*Sets the font to Montserrat*/
 *{
 	font-family: 'Montserrat', sans-serif;
 }
+/*Makes the html document use 100% of avalible space so that the elements can use % of it*/
 html, body{
 	height: 100%;
-	margin:0;
 }
 header{
-	max-height: 11%;
+	height: 11%;
 }
 main{
-	background-image: url("../assets/indexbg.png");
+	/*Makes the background cover the entire screen and not move when scrolling*/
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 	padding:5%;
-	height: auto;
 }
 article{
 	height:auto;
 	width:100%;
+	/*Flexbox so that the items in the articles aling by row*/
 	display: flex;
 	flex-direction: row;
 	padding:3em;
-	margin:5em 0;
+	/*Top and bottom margin inorder to make space inbetween the articles*/
+	margin-bottom:5em;
 }
+/*Size of logo*/
 .logoimg{
-	max-height: 6em;
+	height: 6em;
 }
+/*Makes the current page's link bold*/
 .active{
 	font-weight: bold;
 }
+/*Removes padding from the bootstrap class navbar*/
 .navbar{
 	padding:0;
 }
-.textcontainer{
+/*Makes the text only take up half the space in the article*/
+.text_container{
 	width:50%;
 	padding-right:5em;
 }
-.imagecontainer{
+/*Same for the image*/
+.image_container{
 	width:50%;
+}
+#index_bg{
+background-image: url(../assets/index_bg.png);
+}
+#about_bg{
+background-image: url(../assets/about_bg.png);
 }
 
