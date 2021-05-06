@@ -14,9 +14,8 @@ main{
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
-	padding:3%;
-	padding-top: 10%;
-	height: 100%;
+	padding:5%;
+	height: auto;
 }
 article{
 	height:auto;
@@ -24,6 +23,7 @@ article{
 	display: flex;
 	flex-direction: row;
 	padding:3em;
+	margin:5em 0;
 }
 .logoimg{
 	max-height: 6em;
@@ -37,5 +37,8 @@ article{
 .textcontainer{
 	width:50%;
 	padding-right:5em;
+}
+.imagecontainer{
+	width:50%;
 }
 
