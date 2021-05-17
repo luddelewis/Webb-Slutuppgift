@@ -54,10 +54,6 @@ article{
 .video_container{
 	width:50%;
 }
-/*Curriuculum page needs different css because it only has text*/
-.curriculum_main{
-	padding:5% 20%;
-}
 .curriculum_article{
 	
 }
@@ -79,10 +75,8 @@ background-image: url(../assets/about_bg.png);
 		width: 100%;
 	}
 	.video_container{
-		width:75%;
-		height:;
-		margin-left: auto;
-		margin-right: auto;
+		width:100%;
+		height:400px;
 	}
 	iframe{
 
