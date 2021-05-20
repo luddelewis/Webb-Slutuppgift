@@ -45,10 +45,11 @@ article{
 	width:50%;
 	padding-right:3%;
 }
+/*Special class for find us since it has so little text*/
 .find_us_text_container{
 	width:25%;
 }
-/*Same for the image*/
+/*Same for the image and video*/
 .image_container{
 	width:50%;
 }
@@ -56,40 +57,46 @@ article{
 	width:50%;
 }
 .map_container{
-	width:75%;
+	width:60%;
 	height:30em;
 }
+/*Makes the lists on curriculum use 2 collums*/
 .curriculum_list{
 	columns: 2;
  	-webkit-columns: 2;
 	-moz-columns: 2;
 }
-#index_bg{
-background-image: url(../assets/index_bg.png);
+#bg_1{
+	background-image: url(../assets/bg_1.png);
 }
 
-#about_bg{
-background-image: url(../assets/about_bg.png);
+#bg_2{
+	background-image: url(../assets/bg_2.png);
 }
-
+/*Breakpoint which makes it use this css code instead for smaller devices */
+/*This is done to make the website more responsive*/
 @media(max-width:1300px)
 {
 	article{
 		display:flex;
 		flex-direction: column;
 	}
+	.find_us{
+		flex-direction: row;
+	}	
 	.text_container{
 		width:100%;
 	}
 	.image_container{
 		width: 100%;
 	}
+	.map_container{
+		width: 100%;
+		height: 25em;
+	}
 	.video_container{
 		width:100%;
-		height:250px;
+		height:30em;
 	}
-	iframe{
-
-	}	
 }
 
