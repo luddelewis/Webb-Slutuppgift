@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body class="bg-dark">
+<body class="bg-dark" onresize="responsiveVid()">
 <!--Bootstrap navbar -->
 <header>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -62,7 +62,7 @@
 				<h2>Personal responsibility</h2>
 				<p>There's no tests or teachers hunting you. If you're going to succeed, you're going to want to study hard.</p>
 			</div>
-			<div class="video_container">
+			<div class="video_container" id="video">
 			<!--Embedded yt vid-->
 			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_bxWi1sxRWA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -71,5 +71,7 @@
 	</main>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!--Own JS-->
+	<script type="text/javascript" src="js/responsiveness.js"></script>
 </body>
 </html>

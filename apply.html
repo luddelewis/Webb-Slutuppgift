@@ -49,16 +49,66 @@
 	</header>
 	<main id="bg_1">
 		<article class="bg-light">
-		<form>
-			 <div class="form-group">
-    			<label for="personNr">Personnummer*</label>
-   	 			<input type="text" class="form-control" id="personNr" placeholder="ÅÅÅÅMMDD-XXXX">
-  			</div>
-		</form>			
-		</article>
+			<form>
+				 <div class="form-group">
+				 	<!--Personnr-->
+	    			<label for="personNr">Personnummer*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="personNr" placeholder="ÅÅÅÅMMDD-XXXX">
+					<!--First Name-->
+	   	 			<label for="firstName">Förnamn*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="firstName">
+					<!--Last Name-->
+	   	 			<label for="lastName">Efternamn*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="lastName">
+					<!--c/o-->
+	   	 			<label for="c/o">c/o</label>
+	   	 			<input type="text" class="form-control" id="c/o">
+					<!--Adress-->
+	   	 			<label for="adress">Adress*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="adress">
+					<!--PostNr-->
+	   	 			<label for="postNr">Postnummer*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="postNr">
+					<!--Ort-->
+	   	 			<label for="ort">Ort*</label>
+	   	 			<input type="text" class="form-control mandatory_text" id="ort">
+					<!--PhoneNr-->
+	   	 			<label for="phone">Telefon</label>
+	   	 			<input type="text" class="form-control" id="phone">
+					<!--Email-->
+	   	 			<label for="email">E-post</label>
+	   	 			<input type="text" class="form-control" id="email">
+	   	 			<br>
+					<!--How to contact-->
+	   	 			<label>Hur vill du bli kontaktad?*</label>
+	   	 			<br>
+	   	 			<input class="form-check-input" type="checkbox" id="contactPhone">
+  					<label class="form-check-label" for="contactPhone">Telefon</label>
+
+  					<input class="form-check-input" type="checkbox" id="contactEmail">
+  					<label class="form-check-label" for="contactEmail">E-post</label>
+
+  					<input class="form-check-input" type="checkbox" id="contactSms">
+  					<label class="form-check-label" for="contactSms">Sms</label>
+  					<br>
+  					<br>
+					<!--Citizenship-->
+  					<label for="ctzship">Medborgarskap</label>
+					<select class="form-control" id="ctzship">
+						<option>Svenskt</option>
+						<option>Annat</option>
+					</select>
+	  			</div>
+	  			<br>
+	  			<button type="button" class="btn btn-secondary" onclick="formcheck()">Skicka in</button>
+			</form>			
+	</article>
 
 	</main>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!--Own JS-->
+	<script type="text/javascript" src="js/responsiveness.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
 </body>
 </html>
