@@ -21,12 +21,15 @@ main{
 article{
 	height:auto;
 	width:100%;
-	/*Flexbox so that the items in the articles aling by row*/
+	/*Flexbox so that the items in the articles align by row*/
 	display: flex;
 	flex-direction: row;
 	padding:3em;
 	/*Bottom margin inorder to make space inbetween the articles*/
 	margin-bottom:1%;
+}
+iframe{
+	vertical-align: middle;
 }
 /*Size of logo*/
 .logoimg{
@@ -41,27 +44,21 @@ article{
 	padding:0;
 }
 /*Makes the text only take up half the space in the article*/
-.text_container{
-	width:50%;
+.text{
 	padding-right:3%;
 }
-/*Special class for find us since it has so little text*/
+.half_width{
+	width:50%;
+}
+/*Special classes for find us since it has so little text*/
 .find_us_text_container{
 	width:25%;
 }
-/*Same for the image and video*/
-.image_container{
-	width:50%;
-}
-.video_container{
-	width:50%;
-}
 .map_container{
 	width:60%;
-	height:30em;
 }
-/*Makes the lists on curriculum use 2 collums*/
-.curriculum_list{
+/*Makes the items inside use two columns, used on apply and curriculm*/
+.two_col{
 	columns: 2;
  	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -81,22 +78,18 @@ article{
 		display:flex;
 		flex-direction: column;
 	}
+	.half_width{
+		width: 100%;
+	}
 	.find_us{
 		flex-direction: row;
 	}	
-	.text_container{
-		width:100%;
-	}
-	.image_container{
-		width: 100%;
-	}
+	
 	.map_container{
 		width: 100%;
-		height: 25em;
 	}
-	.video_container{
-		width:100%;
-		/*height:30em;*/
+	.img-fluid{
+		display: none;
 	}
 }
 
