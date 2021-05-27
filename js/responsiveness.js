@@ -1,7 +1,7 @@
 //Responsiveness js
 
 //function for making the yt vid have a fixed aspect ratio
-function responsiveVid(){
+function keepAspect(){
 	//Gets the width of the element with id 'video'
 	var width = document.getElementById('keepAspect').getBoundingClientRect().width;
 	//Calculation for aspect ratio

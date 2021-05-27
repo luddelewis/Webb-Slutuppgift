@@ -1,5 +1,5 @@
-/*css*/
-/*Sets the font to Montserrat*/
+/*style.css*/
+/*Sets the font to Montserrat and fontweight to 400*/
 *{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -27,9 +27,6 @@ article{
 	padding:3em;
 	/*Bottom margin inorder to make space inbetween the articles*/
 	margin-bottom:1%;
-}
-iframe{
-	vertical-align: middle;
 }
 /*Size of logo*/
 .logoimg{
@@ -63,6 +60,11 @@ iframe{
  	-webkit-columns: 2;
 	-moz-columns: 2;
 }
+/*Keeps the labels and inputboxes togherer so they don't get split up by the columns*/
+.form-group{
+	break-inside: avoid-column;
+}
+/*Ids for the mains of the different pages, two are used for v*/
 #bg_1{
 	background-image: url(../assets/bg_1.png);
 }
@@ -70,6 +72,7 @@ iframe{
 #bg_2{
 	background-image: url(../assets/bg_2.png);
 }
+/*Special class for hiding "Specifiera land" textbox when "annat" is not selected*/
 .hideMe{
 	display: none;
 }
@@ -77,20 +80,19 @@ iframe{
 /*This is done to make the website more responsive*/
 @media(max-width:1300px)
 {
+	/*Changes the flex-direction to columns*/
 	article{
 		display:flex;
 		flex-direction: column;
 	}
+	/*Makes the containers take upp the whole width*/
 	.half_width{
 		width: 100%;
 	}
-	.find_us{
-		flex-direction: row;
-	}	
-	
 	.map_container{
 		width: 100%;
 	}
+	/*Hides the decorative pictures*/
 	.img-fluid{
 		display: none;
 	}

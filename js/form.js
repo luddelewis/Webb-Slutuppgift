@@ -4,12 +4,19 @@ function formcheck(){
 	document.getElementById('form').setAttribute('class', 'was-validated two_col image_container');
 }
 function ctzshipCheck(){
-	var ctzshipQuestion = document.getElementById('ctzship');
-	var selectedOption = ctzshipQuestion.options[ctzshipQuestion.selectedIndex].text;
-	console.log(selectedOption);
+	//Gets the dropdown menu and saves it as ctzship
+	var ctzship = document.getElementById('ctzship');
+	//Gets the text of the selected option
+	var selectedOption = ctzship.options[ctzship.selectedIndex].text;
 	if( selectedOption === "Annat" ){
-	document.getElementById('hiddenInput').setAttribute('class', '');
+		//unhides the hiddenInput div and makes it requierd
+		document.getElementById('hiddenInput').setAttribute('class', 'form-group');
+		document.getElementById('country').setAttribute('requierd', 'true');
 	}
-	else
-	document.getElementById('hiddenInput').setAttribute('class', 'hideMe');
+	else{
+		//hides it and makes it not requierd
+		document.getElementById('hiddenInput').setAttribute('class', 'form-group hideMe');
+		document.getElementById('country').setAttribute('requierd', 'false');
+	}
+	
 }

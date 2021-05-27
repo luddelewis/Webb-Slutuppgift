@@ -15,13 +15,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body class="bg-dark" onresize="responsiveVid()" onload="responsiveVid()">
+<body class="bg-dark" onresize="keepAspect()" onload="keepAspect()">
 <!--Bootstrap navbar -->
 <header>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container-fluid">
 			<!--Logo-->
-			<img src="assets/logo.png" class="d-inline-block align-text-top logoimg">
+			<img src="assets/logo.png" class="d-inline-block align-text-top logoimg" alt="logoimage">
 			<a class="navbar-brand" href="index.html">The Indie Quest</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -35,13 +35,13 @@
 					<li class="nav-item">
 						<a class="nav-link" href="about.html">About</a>
 					<li class="nav-item">
-							<a class="nav-link" href="curriculum.html">Curriculum</a>
+						<a class="nav-link" href="curriculum.html">Curriculum</a>
 					</li>
 					<li class="nav-item">
-							<a class="nav-link" href="find_us.html">Find us</a>
+						<a class="nav-link" href="find_us.html">Find us</a>
 					</li>
 					<li class="nav-item">
-							<a class="nav-link" href="apply.html">Apply</a>
+						<a class="nav-link" href="apply.html">Apply</a>
 					</li>
 				</ul>
 			</div>
@@ -51,6 +51,7 @@
 	<main id="bg_1">
 		<!--Content article-->
 		<article class="bg-light">
+			<!--Text container-->
 			<div class="text half_width">
 				<h2>A school for indie game development</h2>
 				<p>The program starts August 16th and you can apply up until June 15th.</p>
@@ -63,16 +64,16 @@
 				<h2>Personal responsibility</h2>
 				<p>There's no tests or teachers hunting you. If you're going to succeed, you're going to want to study hard.</p>
 			</div>
+			<!--Video container-->
 			<div class="half_width" id="keepAspect">
 			<!--Embedded yt vid-->
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_bxWi1sxRWA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/h9L9ZS2zVPc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</article>
-
 	</main>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 	<!--Own JS-->
-	<script type="text/javascript" src="js/responsiveness.js"></script>
+	<script src="js/responsiveness.js"></script>
 </body>
 </html>

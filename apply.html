@@ -17,11 +17,11 @@
 </head>
 <body class="bg-dark">
 <!--Bootstrap navbar -->
-<header>
+	<header>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container-fluid">
 			<!--Logo-->
-			<img src="assets/logo.png" class="d-inline-block align-text-top logoimg">
+			<img src="assets/logo.png" class="d-inline-block align-text-top logoimg" alt="logoimage">
 			<a class="navbar-brand" href="index.html">The Indie Quest</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -51,67 +51,94 @@
 	<main id="bg_1">
 		<!--Content article-->
 		<article class="bg-light">
+			<!--Hidden h1 to make w3 validator happy, it gets mad if an article lacks a heading-->
+			<h1 style="display:none;">Apply</h1>
 			<form class ="needs-validation two_col half_width" id="form">
+				
 				<div class="form-group">
-				 	<!--Personnr-->
-	    			<label for="personNr">Personnummer*</label>
+				 <!--Personnr-->
+	    			<label for="personNr">Personnr*</label>
 	   	 			<input type="text" class="form-control" id="personNr" placeholder="ÅÅÅÅMMDD-XXXX" required>
-					<!--First Name-->
+	   	 		</div>
+				<!--First Name-->
+				<div class="form-group">
 	   	 			<label for="firstName">Förnamn*</label>
 	   	 			<input type="text" class="form-control" id="firstName" required>
-					<!--Last Name-->
+	   	 		</div>
+				<!--Last Name-->
+				<div class="form-group">
 	   	 			<label for="lastName">Efternamn*</label>
 	   	 			<input type="text" class="form-control" id="lastName" required>
-					<!--c/o-->
+	   	 		</div>
+				<!--c/o-->
+				<div class="form-group">
 	   	 			<label for="c/o">c/o</label>
 	   	 			<input type="text" class="form-control" id="c/o">
-					<!--Adress-->
+	   	 		</div>
+				<!--Adress-->
+				<div class="form-group">
 	   	 			<label for="adress">Adress*</label>
 	   	 			<input type="text" class="form-control" id="adress" required>
-					<!--PostNr-->
+	   	 		</div>
+				<!--PostNr-->
+				<div class="form-group">
 	   	 			<label for="postNr">Postnummer*</label>
 	   	 			<input type="text" class="form-control" id="postNr" required>
-					<!--Ort-->
+	   	 		</div>
+				<!--Ort-->
+				<div class="form-group">
 	   	 			<label for="ort">Ort*</label>
 	   	 			<input type="text" class="form-control" id="ort" required>
-					<!--PhoneNr-->
+	   	 		</div>
+				<!--PhoneNr-->
+				<div class="form-group">
 	   	 			<label for="phone">Telefon</label>
 	   	 			<input type="tel" class="form-control" id="phone">
-					<!--Email-->
+	   	 		</div>
+				<!--Email-->
+				<div class="form-group">
 	   	 			<label for="email">E-post</label>
 	   	 			<input type="email" class="form-control" id="email">
-					<!--How to contact dropdown-->
+	   	 		</div>
+				<!--How to contact dropdown-->
+				<div class="form-group">
 	   	 			<label for="contactSelect">Hur vill du bli kontaktad?*</label>
 					<select class="form-control" id="contactSelect" required>
+						<!--The option that is selected by default-->
 						<option selected disabled value="">Välj...</option>
 						<option>Telefon</option>
 						<option>E-post</option>
 						<option>Sms</option>
 					</select>
-					<!--Citizenship dropdown-->
+				</div>
+				<!--Citizenship dropdown-->
+				<div class="form-group">
   					<label for="ctzship">Medborgarskap</label>
+  					<!--Runs a function when the value is changed-->
 					<select class="form-control" id="ctzship" onchange="ctzshipCheck()">
+						<!--The option that is selected by default-->
 						<option selected disabled value="">Välj...</option>
 						<option>Svenskt</option>
 						<option>Annat</option>
 					</select>
-					<!--Hidden text input to specify country if it is "annat"-->
-					<div id="hiddenInput" class="hideMe">
-	   	 			<label for="country" class="">Specifiera land</label>
-	   	 			<input type="text" class="form-control" id="country" required="false">
-	   	 			</div>
-	  			</div>
+				</div>
+				<!--Hidden text input to specify country if it is "annat", the class hideMe is used to hide it-->
+				<div class="form-group hideMe" id="hiddenInput">	
+	   	 			<label for="country" class="">Specificera land</label>
+	   	 			<input type="text" class="form-control" id="country">
+	   	 		</div>
 	  			<br>
+	  			<!--Submit button, runs formcheck function-->
 	  			<button type="submit" class="btn btn-secondary" onclick="formcheck()">Skicka in</button>
 			</form>
-			<div class="half_width"><img src="assets/map.png" class="img-fluid"></div>	
-	</article>
-
+			<!--Image container-->
+			<div class="half_width"><img src="assets/map.png" class="img-fluid" alt="picture of a drawn map"></div>	
+		</article>
 	</main>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 	<!--Own JS-->
-	<script type="text/javascript" src="js/responsiveness.js"></script>
-	<script type="text/javascript" src="js/form.js"></script>
+	<script src="js/responsiveness.js"></script>
+	<script src="js/form.js"></script>
 </body>
 </html>
