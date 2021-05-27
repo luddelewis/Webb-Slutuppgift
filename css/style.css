@@ -43,7 +43,7 @@ iframe{
 .navbar{
 	padding:0;
 }
-/*Makes the text only take up half the space in the article*/
+/*Space between text and other content*/
 .text{
 	padding-right:3%;
 }
@@ -69,6 +69,9 @@ iframe{
 
 #bg_2{
 	background-image: url(../assets/bg_2.png);
+}
+.hideMe{
+	display: none;
 }
 /*Breakpoint which makes it use this css code instead for smaller devices */
 /*This is done to make the website more responsive*/

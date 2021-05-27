@@ -52,35 +52,35 @@
 		<!--Content article-->
 		<article class="bg-light">
 			<form class ="needs-validation two_col half_width" id="form">
-				 <div class="form-group">
+				<div class="form-group">
 				 	<!--Personnr-->
 	    			<label for="personNr">Personnummer*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="personNr" placeholder="ÅÅÅÅMMDD-XXXX" required>
+	   	 			<input type="text" class="form-control" id="personNr" placeholder="ÅÅÅÅMMDD-XXXX" required>
 					<!--First Name-->
 	   	 			<label for="firstName">Förnamn*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="firstName" required>
+	   	 			<input type="text" class="form-control" id="firstName" required>
 					<!--Last Name-->
 	   	 			<label for="lastName">Efternamn*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="lastName" required>
+	   	 			<input type="text" class="form-control" id="lastName" required>
 					<!--c/o-->
 	   	 			<label for="c/o">c/o</label>
 	   	 			<input type="text" class="form-control" id="c/o">
 					<!--Adress-->
 	   	 			<label for="adress">Adress*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="adress" required>
+	   	 			<input type="text" class="form-control" id="adress" required>
 					<!--PostNr-->
 	   	 			<label for="postNr">Postnummer*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="postNr" required>
+	   	 			<input type="text" class="form-control" id="postNr" required>
 					<!--Ort-->
 	   	 			<label for="ort">Ort*</label>
-	   	 			<input type="text" class="form-control mandatory_text" id="ort" required>
+	   	 			<input type="text" class="form-control" id="ort" required>
 					<!--PhoneNr-->
 	   	 			<label for="phone">Telefon</label>
 	   	 			<input type="tel" class="form-control" id="phone">
 					<!--Email-->
 	   	 			<label for="email">E-post</label>
 	   	 			<input type="email" class="form-control" id="email">
-					<!--How to contact-->
+					<!--How to contact dropdown-->
 	   	 			<label for="contactSelect">Hur vill du bli kontaktad?*</label>
 					<select class="form-control" id="contactSelect" required>
 						<option selected disabled value="">Välj...</option>
@@ -88,12 +88,18 @@
 						<option>E-post</option>
 						<option>Sms</option>
 					</select>
-					<!--Citizenship-->
+					<!--Citizenship dropdown-->
   					<label for="ctzship">Medborgarskap</label>
-					<select class="form-control" id="ctzship">
+					<select class="form-control" id="ctzship" onchange="ctzshipCheck()">
+						<option selected disabled value="">Välj...</option>
 						<option>Svenskt</option>
 						<option>Annat</option>
 					</select>
+					<!--Hidden text input to specify country if it is "annat"-->
+					<div id="hiddenInput" class="hideMe">
+	   	 			<label for="country" class="">Specifiera land</label>
+	   	 			<input type="text" class="form-control" id="country" required="false">
+	   	 			</div>
 	  			</div>
 	  			<br>
 	  			<button type="submit" class="btn btn-secondary" onclick="formcheck()">Skicka in</button>
