@@ -11,12 +11,12 @@ function ctzshipCheck(){
 	if( selectedOption === "Annat" ){
 		//unhides the hiddenInput div and makes it requierd
 		document.getElementById('hiddenInput').setAttribute('class', 'form-group');
-		document.getElementById('country').setAttribute('requierd', 'true');
+		document.getElementById('country').required=true;
 	}
 	else{
 		//hides it and makes it not requierd
 		document.getElementById('hiddenInput').setAttribute('class', 'form-group hideMe');
-		document.getElementById('country').setAttribute('requierd', 'false');
+		document.getElementById('country').required=false;
 	}
 	
 }

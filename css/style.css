@@ -40,10 +40,11 @@ article{
 .navbar{
 	padding:0;
 }
-/*Space between text and other content*/
+/*Space between text and other content to the right*/
 .text{
 	padding-right:3%;
 }
+/*Class for making content use half of avaliable width, used on almost every article except the ones on curriculum*/
 .half_width{
 	width:50%;
 }
@@ -52,9 +53,9 @@ article{
 	width:25%;
 }
 .map_container{
-	width:60%;
+	width:75%;
 }
-/*Makes the items inside use two columns, used on apply and curriculm*/
+/*Makes the items inside use two columns, used on apply, curriculm*/
 .two_col{
 	columns: 2;
  	-webkit-columns: 2;
@@ -85,16 +86,24 @@ article{
 		display:flex;
 		flex-direction: column;
 	}
-	/*Makes the containers take upp the whole width*/
+	/*Makes the containers use the whole width*/
 	.half_width{
 		width: 100%;
+	}
+	/*Hides the decorative pictures since there isnt room on smaller devices*/
+	.img-fluid{
+		display: none;
 	}
 	.map_container{
 		width: 100%;
 	}
-	/*Hides the decorative pictures*/
-	.img-fluid{
-		display: none;
+	/*Makes text on find_us use colums*/
+	.find_us_text_container{
+		width: 100%;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
 	}
+	
 }
 
